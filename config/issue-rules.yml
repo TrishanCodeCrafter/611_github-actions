@@ -8,7 +8,7 @@ rules:
   addLabels: ['enhancement']
 - contains: enpm611
   assign: ['enpm611']
-- contains: may be
+- contains: may be!
   addLabels: ['question']   
 
 # List that always runs after rules and nomatches. Look for missing sets of tags here.
