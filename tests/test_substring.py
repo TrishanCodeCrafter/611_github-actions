@@ -16,6 +16,10 @@ class TestSubstring(unittest.TestCase):
     def test_partial_substrings(self):
         score:float = string_utils.calculate_match_degree("software engineering","building engineering")
         self.assertEqual(score, 0.6)   # fix.....changed to 0.6 from 0.9
+        
+    def test_kinda_substrings(self):      # Adding new test case..
+        score:float = string_utils.calculate_match_degree("principle","principal")
+        self.assertEqual(score, 0.9)    
 
 if __name__ == "__main__":
     unittest.main()
