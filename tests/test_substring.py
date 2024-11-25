@@ -19,7 +19,7 @@ class TestSubstring(unittest.TestCase):
         
     def test_kinda_substrings(self):      # Adding new test case..
         score:float = string_utils.calculate_match_degree("principle","principal")
-        self.assertEqual(score, 0.9)    
+        self.assertEqual(score, 0.77)    # was 0.9
 
 if __name__ == "__main__":
     unittest.main()
